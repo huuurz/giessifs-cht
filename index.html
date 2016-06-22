@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/imagelightbox.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -50,7 +51,7 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
@@ -75,7 +76,17 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header
+        data-slides='[
+            "img/slider/giessi_sven.jpg",
+            "img/slider/DSC05834.JPG",
+            "img/slider/DSC05839.JPG",
+            "img/slider/DSC05847.JPG",
+            "img/slider/DSC05850.JPG"
+        ]'
+
+        style="text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);"
+        >
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">Willkommen am</div>
@@ -87,14 +98,17 @@
     </header>
 
     <!-- Services Section -->
-    <section id="infos">
+    <section id="infos" style="padding-bottom: 0px;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-offset-4 col-lg-4 text-center">
                     <h2 class="section-heading">Infos</h2>
-                    <h3 class="section-subheading text-muted">
-                        Samstag Mittag Schülerturnier, Saitensprung Samstag Abend, Brunch Sonntag morgen, wann The View?
-                    </h3>
+                    <h4 class="section-subheading text-muted">Samstag</h4>
+                    <h3 style="margin:0;" class="section-subheading text-muted">Mittag - Schülerturnier</h3><br />
+                    <h3 style="margin:0;" class="section-subheading text-muted">Abend - Saitensprung</h3><br />
+                    <h4 class="section-subheading text-muted">Sonntag</h4>
+                    <h3 style="margin:0;" class="section-subheading text-muted">Morgen - Brunch</h3><br />
+                    <h3 style="margin:0;" class="section-subheading text-muted">Irgendwann - The View (Yves, wann spielt the view?)</h3><br />
                 </div>
             </div>
         </div>
@@ -188,6 +202,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
     <script src="js/imagelightbox.min.js"></script>
+    <script src="js/slider.js"></script>
 
     <script>
     $(document).ready(function() {
@@ -202,9 +217,6 @@
             onStart:     function() { overlayOn(); },
             onEnd:       function() { overlayOff(); },
         });
-        console.log($( '.lightbox' ));
-
-
     });
     </script>
 </body>

@@ -1,0 +1,9 @@
+//slider
+
+[data-slides] {
+	background-image: url(./img/slider/giessi_sven.jpg); /* Default image. */
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	transition: background-image 1s linear;
+}
